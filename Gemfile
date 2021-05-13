@@ -14,8 +14,15 @@ gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
 
+gem 'carrierwave', '~> 2.2', '>= 2.2.1'
+
+gem 'fog', '~> 2.2'
+
+gem 'mini_magick'
 
 gem 'yarn', '~> 0.1.1'
+
+gem 'optimist', '~> 3.0', '>= 3.0.1'
 
 gem 'slim'
 # Use Boostrap for stylesheets
@@ -49,9 +56,13 @@ group :development do
   # Can be configured to work on production as well see: https://github.com/MiniProfiler/rack-mini-profiler/blob/master/README.md
   gem 'rack-mini-profiler', '~> 2.0'
   gem 'listen', '~> 3.3'
+  gem 'spring-watcher-listen', '~> 2.0.0'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+  gem 'figaro'
 end
+
+
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
