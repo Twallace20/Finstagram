@@ -11,4 +11,3 @@
 * Start appliacation 
     
     run rails s
-# 847-981-7182
